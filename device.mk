@@ -28,7 +28,6 @@ PRODUCT_AAPT_CONFIG := normal
 
 # Dalvik heap and hwui memory limits
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -322,7 +321,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqsap_sdk \
     libQWiFiSoftApCfg \
-    libwpa_client 
+    libwpa_client
 
 PRODUCT_PACKAGES += \
     hostapd \
