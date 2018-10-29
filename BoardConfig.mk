@@ -177,7 +177,7 @@ TARGET_USES_INTERACTION_BOOST := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 
-Properties
+# Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 # RIL
