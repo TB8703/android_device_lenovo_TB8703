@@ -29,6 +29,8 @@ qcom.bluetooth.soc=smd
 ro.qualcomm.bt.hci_transport=smd
 
 # Camera
+persist.camera.HAL3.enabled=1
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 persist.vendor.camera.display.umax=1920x1080
 persist.vendor.camera.display.lmax=1280x720
 camera.lowpower.record.enable=1
