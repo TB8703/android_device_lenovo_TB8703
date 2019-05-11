@@ -21,6 +21,7 @@ TARGET_SCREEN_WIDTH := 1920
 # Include Bootanimation configuration
 TARGET_BOOT_ANIMATION_RES :=1080
 
+PRODUCT_CHARACTERISTICS := tablet
 # Inherit 64-bit configs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 

@@ -38,6 +38,7 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
+    libaacwrapper \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing
@@ -97,6 +98,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
+    libdisplayconfig \
     libqdMetaData.system \
     libtinyxml \
     memtrack.msm8953
@@ -201,6 +203,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     libandroid_net \
+    libnl \
     netutils-wrapper-1.0
 
 # Lights
@@ -351,6 +354,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/fstman.ini:system/etc/wifi/fstman.ini \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat
+
+# WiFi Display
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 # Call the proprietary setup
 $(call inherit-product, vendor/lenovo/TB8703/TB8703-vendor.mk)
